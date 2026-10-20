@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="../styles/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+<body>
+   
+    <ul class="nav nav-tabs">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="/html/index.html" role="button" aria-expanded="false">Inicio</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" data-contenido="mision">Misión</a></li>
+              <li><a class="dropdown-item" href="#" data-contenido="vision">Visión</a></li>
+              <li><a class="dropdown-item" href="#" data-contenido="quehacemos">¿Qué hacemos?</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menú</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " aria-disabled="true">Domicilios</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " aria-disabled="true">Contacto</a>
+          </li>
+      </ul>
+<!-- CARRUCEL  -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active d-item">
+      <img src="/img/tamal.jpg" class="d-block w-100 d-img" alt="carrucel 1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>PRIMER COMBO</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid alias culpa reprehenderit accusamus suscipit. Ipsam officiis architecto adipisci iure quae aperiam reprehenderit unde, ratione eius expedita illo. Non, accusamus saepe.</p>
+        <div>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">PIDE AQUI</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item d-item">
+      <img src="/img/bandeja.jpg" class="d-block w-100 d-img" alt="carrucel 2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>SEGUNDO COMBO</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore omnis fugiat sequi tempora iste. Hic modi tempore amet eos qui quisquam vel nihil in! Rerum laboriosam corrupti laborum animi pariatur!</p>
+        <div>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">PIDE AQUI</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item d-item">
+      <img src="/img/empanada.jpeg" class="d-block w-100 d-img" alt="carrucel 3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>TERCER COMBO</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis recusandae cupiditate, dicta consequatur magni repudiandae alias aliquam facere qui nobis deserunt aspernatur neque ad necessitatibus officia? Nostrum soluta ea totam!</p>
+        <div>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">PIDE AQUI</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+     <div id="contenido-dinamico" class="oculto"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+<script src="../java_p/index.js"></script>
+</html>

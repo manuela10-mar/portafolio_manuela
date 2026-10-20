@@ -1,0 +1,57 @@
+.color{
+  background-color: hsl(46, 100%, 94%);
+}
+
+.categoria {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #D60000;
+  font-weight: 700;
+  font-size: 2rem;
+  border-bottom: 3px solid #FFD700;
+  padding-bottom: 10px;
+}
+.pais h3 {
+  color: #0033A0;
+  border-bottom: 2px solid #D60000;
+  padding-bottom: 6px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.card-restaurante {
+  border: 2px solid #FFD700;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.card-restaurante img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-body-restaurante {
+  padding: 10px 15px;
+}
+.card-body-restaurante h5 {
+  margin: 0 0 8px 0;
+  color: #D60000;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.card-body-restaurante p {
+  margin: 4px 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+    /* Pie de página */
+footer {
+ background: linear-gradient(to right, #ffcc00, #0033a0, #d60000);
+ text-align: center;
+ color: white;
+ padding: 1%;
+}

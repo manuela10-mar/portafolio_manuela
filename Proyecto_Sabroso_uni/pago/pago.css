@@ -1,0 +1,112 @@
+
+/* --------------------------------------------------------------------metodo de pago------------------------------------------ */
+ /* Contenedor principal */
+.contenedor-pago {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Títulos */
+h1, .titulo-seccion {
+  margin-bottom: 1rem;
+}
+
+/* Resumen de compra */
+#resumen-compra ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#resumen-compra li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+#total {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#finalizar-compra {
+  margin-top: 1rem;
+  background: #d51717;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+ align-content: center;
+
+}
+
+#finalizar-compra:hover {
+  background: #218838;
+}
+
+/* Sección métodos de pago */
+.metodo-pago {
+  margin-top: 2rem;
+  background: #ffd10391;
+  color: #000000;
+  padding: 1rem;
+  border-radius: 10px;
+  border: red;
+}
+
+.metodos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.metodo {
+  box-shadow: #ddd;
+  background: #0e5ae8ba;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 170px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.metodo:hover {
+  border-color: #ff3b3b;
+  transform: translateY(-5px);
+}
+
+.metodo.popular::after {
+  content: "POPULAR";
+  background: #ffc107;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.metodo .logo-pago {
+  width: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.info-pago .precio {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+}
+
+.info-pago .bonus {
+  font-size: 0.85rem;
+  color: #00c4ff;
+}

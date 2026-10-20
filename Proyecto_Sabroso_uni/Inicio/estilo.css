@@ -1,0 +1,153 @@
+.color{
+  background-color: hsl(46, 100%, 94%);
+}
+
+
+.barra-navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffcc00;
+  /* background: linear-gradient(to right, #ffcc00, #0033a0, #d60000); */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para separación */
+  position: relative;
+  z-index: 1000;
+
+  font-family: 'Arial', sans-serif; 
+  font-size: 18px;                
+  font-weight: bold;               /* Negrita para todo el nav */
+
+}
+
+.logo {
+  height: auto;           /* Altura automática para mantener proporción */
+  width: 100px;           
+  margin-right: 20px;     /* Separación del texto al lado */
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05); /* Efecto suave al pasar el mouse */
+}
+
+.parte-izquierda {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1; /* Hace que esta parte use más espacio del nav */
+}
+
+.parte-izquierda, .parte-derecha {
+  display: flex;
+  align-items: center;
+}
+
+
+.opcion-navegacion {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.opcion-roja {
+  color: #d60000; 
+}
+
+.icono-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+}
+.icono-texto:hover {
+  color: #0033a0;
+  text-decoration: underline;
+  
+}
+
+.icono {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.boton-ingresar {
+  background-color: #0033a0; 
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+/* carrucel */
+
+.d-item {
+  height:500px;
+
+}
+
+.d-img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.7);
+  /* object-fit: cover; */
+}
+.carousel {
+  margin-top: 40px; /* Ajusta este valor según el alto de tu nav */
+}
+
+
+/* Sección Bienvenida */
+section.text-center h2 {
+  color: #d60000;
+}
+
+/* Sección Destacados */
+section .bi {
+  transition: transform 0.3s ease;
+}
+
+section .bi:hover {
+  transform: scale(1.2);
+}
+
+/* Pie de página */
+footer {
+ background: linear-gradient(to right, #ffcc00, #0033a0, #d60000);
+ text-align: center;
+ color: white;
+ padding: 1%;
+}
+
+
+/* Sección Contáctanos */
+section h2 {
+  color: #d60000; 
+  font-weight: bold;
+}
+
+form .form-control {
+  border-radius: 10px;
+  border: 2px solid #0033a0; 
+}
+
+form .form-control:focus {
+  box-shadow: 0 0 5px #ffcc00;
+  border-color: #ffcc00; 
+}
+
+form button.btn-danger {
+  background-color: #d60000;
+  border: none;
+  font-weight: bold;
+}
+
+form button.btn-danger:hover {
+  background-color: #a80000;
+}

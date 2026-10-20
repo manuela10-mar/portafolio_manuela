@@ -1,0 +1,48 @@
+/* Fondo general */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff6cc;
+}
+
+/* Contenedor principal centrado */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+/* Tarjetas */
+.card {
+  background-color: white;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 300px;
+  text-align: center;
+  text-decoration: none; /* Quita el subrayado del enlace */
+  color: black; /* Asegura que el texto sea negro */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s ease;
+}
+
+.card:hover {
+  border: 2px solid red;
+}
+
+/* Títulos */
+.card h2 {
+  margin-top: 0;
+  color: #222;
+}
+
+/* Texto */
+.card p {
+  color: #555;
+}
+
+
+

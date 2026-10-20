@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenar</title>
+    <link rel="stylesheet" href="../carrito/carrito.css">
+    <link rel="stylesheet" href="../ordenar/ordenar.css">
+    <link rel="stylesheet" href="../Inicio/estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="barra-navegacion">
+    <div class="parte-izquierda">
+      <img src="../img/logo_principal.png" alt="Logo del restaurante" class="logo">
+      <a href="../Inicio/inicio.html" class="opcion-navegacion ">Inicio</a>
+      <a href="../ordenar/ordenar.html" class="opcion-navegacion opcion-roja">Ordenar</a>
+      <a href="../Restaurantes/resta.html" class="opcion-navegacion">Restaurantes</a>
+      <a href="../Nosotros/nosotros.html" class="opcion-navegacion">Nosotros</a>
+    </div>
+
+    <div class="parte-derecha">
+      <a href="../cupones/cupones.html" class="icono-texto">
+        <i class="bi bi-ticket-perforated icono"></i>
+        <span>Cupones</span>
+      </a>
+      <a href="../perfil/perfil.html" class="icono-texto">
+        <i class="bi bi-person icono"></i>
+        <span>Perfil</span>
+      </a>
+      <a href="../html/login.html" class="boton-ingresar">Ingresar</a>
+      <a href="../carrito/carrito.html">
+        <i class="bi bi-cart icono"></i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ENCABEZADO -->
+  <header class="encabezado">
+    <h1>Ordena tu comida colombiana favorita</h1>
+    <p class="texto-promocional">Delicias auténticas, directo a tu mesa</p>
+  </header>
+  <!-- BUSCARDOR -->
+  <div class="container mt-">
+    <input type="text" id="buscador" placeholder="Buscar Comida...">
+  </div>
+  
+  <!-- PRODUCTOS -->
+     <main class="container mt-2">
+  <main class="contenedor-ordenes">
+
+  </main>
+  <!-- REGION -->
+      <!-- <section class="region">
+    <h3>Región Caribe</h3> -->
+     <main class="container mt-5">
+    
+    <section class="region">
+      <h3>Region Caribe</h3>
+  <main class="contenedor-ordenes">
+    <div class="producto">
+      <img src="../img/Ordenar/AREPA_HUEVO.jpg" alt="Bandeja Paisa">
+      <h2>Arepa de huevo</h2>
+      <p>Arepa frita rellena de huevo y carne molida.</p>
+      <span class="precio">$25.000</span>
+      <button class="boton-agregar" data-nombre="Arepa de huevo" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Arroz con coco.jpg" alt="Tamales Tolimenses">
+      <h2>Arroz con coco</h2>
+      <p>Arroz cocido con leche de coco, típico acompañante del pescado.</p>
+      <span class="precio">$20.000</span>
+      <button class="boton-agregar" data-nombre="Arroz con leche de coco" data-precio="20000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Frito costeño.jpeg" alt="Lechona tolimense">
+      <h2>Frito costeño</h2>
+      <p>Incluye carimañolas, empanadas de yuca y deditos.</p>
+      <span class="precio">$10.000</span>
+      <button class="boton-agregar" data-nombre="Frito costeño" data-precio="10000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Butifarra.avif" alt="Arepa con Queso">
+      <h2>Butifarra</h2>
+      <p>Embutido pequeño, típico de Soledad.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Butifarra" data-precio="8000">Agregar</button>
+    </div> 
+
+  <div class="producto">
+      <img src="../img/Ordenar/Pescado frito con patacón y arroz con coco.jpg" alt="Empanadas andinas">
+      <h2>Pescado frito con patacón y arroz con coco</h2>
+      <p>Común en las zonas costeras.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Pescado frito con patacón y arroz con coco" data-precio="8000">Agregar</button>
+    </div> 
+  </div>
+  </main>
+
+<!-- REGION -->
+
+  <h3 class="region">Region Andina</h3>
+  <main class="contenedor-ordenes">
+    <div class="producto">
+      <img src="../img/Ordenar/bandeja.jpg" alt="Bandeja Paisa">
+      <h2>Bandeja Paisa</h2>
+      <p>Frijoles, arroz, carne, chorizo, huevo, plátano y más.</p>
+      <span class="precio">$25.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Tamales Tolimenses.jpg" alt="Tamales Tolimenses">
+      <h2>Tamal Tolimense</h2>
+      <p>Masa con carne, arroz y verduras, envueltos en hojas de plátano.</p>
+      <span class="precio">$20.000</span>
+      <button class="boton-agregar" data-nombre="Tamal Tolimense" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Lechona tolimense.jpg" alt="Lechona tolimense">
+      <h2>Lechona Tolimense</h2>
+      <p>Cerdo relleno de arroz, arveja y condimentos.</p>
+      <span class="precio">$10.000</span>
+      <button class="boton-agregar" data-nombre="Lechona Tolimense " data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/arepa_queso.jpg" alt="Arepa con Queso">
+      <h2>Arepa con queso</h2>
+      <p>Arepa caliente con queso fundido, ideal para compartir.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Arepa con queso" data-precio="25000">Agregar</button>
+    </div> 
+
+    <div class="producto">
+      <img src="../img/Ordenar/Empanadas andinas.jpg" alt="Empanadas andinas">
+      <h2>Empanadas Andinas</h2>
+      <p>Hechas con masa de maíz y rellenas de papa y carne.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Emapandas Andinas" data-precio="25000">Agregar</button>
+    </div> 
+  </div>
+  </main>
+
+  <!-- REGION -->
+
+  <h3 class="region">Región Pacífica</h3>
+  <main class="contenedor-ordenes">
+    <div class="producto">
+      <img src="../img/Ordenar/Encocado de camarón.jpg" alt="Encocado de camarón">
+      <h2>Encocado de camarón</h2>
+      <p>Camarones cocinados en leche de coco y especias.</p>
+      <span class="precio">$25.000</span>
+      <button class="boton-agregar" data-nombre="Encocado de camarón"  data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Arroz con piangua.webp" alt="Arroz con piangua">
+      <h2>Arroz con piangua</h2>
+      <p>Marisco local típico del Pacífico.</p>
+      <span class="precio">$20.000</span>
+      <button class="boton-agregar" data-nombre="Arroz con piangua" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Sudado de pescado.jpg" alt="Lechona tolimense">
+      <h2>Sudado de pescado</h2>
+      <p>Pescado cocinado con verduras y hierbas.</p>
+      <span class="precio">$10.000</span>
+      <button class="boton-agregar" data-nombre="Sudado de pescado" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Tapao de pescado.jpg" alt="Arepa con Queso">
+      <h2>Tapao de pescado</h2>
+      <p>Pescado cocido con plátano verde y verduras.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Tapao de pescado" data-precio="25000">Agregar</button>
+    </div> 
+
+    <div class="producto">
+      <img src="../img/Ordenar/Arroz clavado.jpg" alt="Empanadas andinas">
+      <h2>Arroz clavado</h2>
+      <p>Arroz cocido con carne o mariscos.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div> 
+  </div>
+  </main>
+
+  <!-- REGION -->
+
+  <h3 class="region">Región Orinoquía</h3>
+  <main class="contenedor-ordenes">
+    <div class="producto">
+      <img src="../img/Ordenar/Mamona.jpg" alt="Bandeja Paisa">
+      <h2>Mamona</h2>
+      <p>Carne de res asada en vara sobre brasas.</p>
+      <span class="precio">$25.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Arepa de arroz.jpeg" alt="Tamales Tolimenses">
+      <h2>Arepa de arroz</h2>
+      <p>Típica del Meta.</p>
+      <span class="precio">$20.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Pisillo de pescado o carne.webp" alt="Lechona tolimense">
+      <h2>Pisillo de pescado o carne</h2>
+      <p>Carne salada y desmechada.</p>
+      <span class="precio">$10.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Hayacas.webp" alt="Arepa con Queso">
+      <h2>Hayacas</h2>
+      <p>Similar al tamal, rellenas de carne y verduras.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div> 
+
+    <div class="producto">
+      <img src="../img/Ordenar/Mojarra frita del río.jpg" alt="Empanadas andinas">
+      <h2>Mojarra frita del río</h2>
+      <p>Pescado fresco de río.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div> 
+  </div>
+  </main>
+
+  <!-- REGION -->
+
+  <h3 class="region">Región Amazónica</h3>
+  <main class="contenedor-ordenes">
+    <div class="producto">
+      <img src="../img/Ordenar/Mojojoy.jpg" alt="Bandeja Paisa">
+      <h2>Mojojoy</h2>
+      <p>Larvas comestibles, pueden asarse o freírse.</p>
+      <span class="precio">$25.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Patarasca de pescado.webp" alt="Tamales Tolimenses">
+      <h2>Patarasca de pescado</h2>
+      <p>Pescado envuelto en hoja de bijao.</p>
+      <span class="precio">$20.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Cazabe de yuca.jpg" alt="Lechona tolimense">
+      <h2>Cazabe de yuca</h2>
+      <p>Pan de yuca amarga, preparado por comunidades indígenas.</p>
+      <span class="precio">$10.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Tacacho.jpg" alt="Arepa con Queso">
+      <h2>Tacacho</h2>
+      <p>Plátano verde asado y machacado, a veces con chicharrón.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div> 
+
+    <div class="producto">
+      <img src="../img/Ordenar/Pirarucú asado o seco.jpg" alt="Empanadas andinas">
+      <h2>Pirarucú asado o seco</h2>
+      <p>Pescado gigante amazónico.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div> 
+  </div>
+  </main>
+
+  <!-- REGION -->
+
+  <h3 class="region">Región Insular</h3>
+  <main class="contenedor-ordenes">
+    <div class="producto">
+      <img src="../img/Ordenar/Caracol guisado.PNG" alt="Bandeja Paisa">
+      <h2>Caracol guisado</h2>
+      <p>Con coco, ajo, cebolla y pimienta. </p>
+      <span class="precio">$25.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Pescado frito con arroz and frijoles.png" alt="Tamales Tolimenses">
+      <h2>Pescado frito con arroz and frijoles</h2>
+      <p>Arroz con fríjoles de coco y pescado.</p>
+      <span class="precio">$20.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Patí.jpeg" alt="Lechona tolimense">
+      <h2>Patí</h2>
+      <p>Empanada rellena de carne especiada.</p>
+      <span class="precio">$10.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/fruta de pan.jpeg" alt="Arepa con Queso">
+      <h2>fruta de pan</h2>
+      <p>Asada o frita, similar a una papa tropical.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div> 
+
+    <div class="producto">
+      <img src="../img/Ordenar/Torta de coco.jpg" alt="Empanadas andinas">
+      <h2>Torta de coco</h2>
+      <p>Bizcocho típico de coco rallado.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div> 
+  </div>
+  </main>
+
+  <!-- SOPAS -->
+
+  <h3 class="region">Sopas</h3>
+  <main class="contenedor-ordenes">
+    <div class="producto">
+      <img src="../img/Ordenar/Sopas/Ajiaco santafereño.avif" alt="Bandeja Paisa">
+      <h2>Ajiaco santafereño</h2>
+      <p>Sopa con papa, pollo, guasca y mazorca.</p>
+      <span class="precio">$25.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Sopas/Caldo de costilla.webp" alt="Arepa con Queso">
+      <h2>Caldo de costilla</h2>
+      <p>Sopa con costilla de res, papas y cilantro.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div> 
+
+    <div class="producto">
+      <img src="../img/Ordenar/Sopas/Changua.jpg" alt="Arepa con Queso">
+      <h2>Changua</h2>
+      <p>Sopa de leche con huevo y cebolla, típica de Bogotá.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div> 
+
+    <div class="producto">
+      <img src="../img/Ordenar/Sopas/Mote de queso.webp" alt="Arepa con Queso">
+      <h2>Mote de queso</h2>
+      <p>Sopa espesa con queso costeño y ñame.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div> 
+
+    <div class="producto">
+      <img src="../img/Ordenar/Sopas/Sancocho de pescado.webp" alt="Arepa con Queso">
+      <h2>Sancocho de pescado</h2>
+      <p>Sopa de pescado con verduras.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div> 
+
+    <div class="producto">
+      <img src="../img/Ordenar/Sopas/Sancocho de bagre.avif" alt="Arepa con Queso">
+      <h2>Sancocho de bagre</h2>
+      <p>Sopa de bagre con yuca y plátano.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div> 
+
+    <div class="producto">
+      <img src="../img/Ordenar/Sopas/Sancocho llanero.jpg" alt="Arepa con Queso">
+      <h2>Sancocho llanero</h2>
+      <p>Con carne, yuca, plátano y ahuyama.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Sopas/Caldo de caracol gigante.png" alt="Arepa con Queso">
+      <h2>Caldo de caracol gigante</h2>
+      <p>Típico en comunidades indígenas.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/Ordenar/Sopas/Rondón.jpg" alt="Arepa con Queso">
+      <h2>Rondón</h2>
+      <p>Sopa con pescado, caracol, yuca, plátano, dumplings y leche de coco.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div> 
+
+
+    <div class="producto">
+      <img src="../img/Ordenar/Sopas/Fish tea.jpg" alt="Arepa con Queso">
+      <h2>Fish tea</h2>
+      <p>Caldo de pescado especiado.</p>
+      <span class="precio">$8.000</span>
+      <button class="boton-agregar" data-nombre="Bandeja Paisa" data-precio="25000">Agregar</button>
+    </div> 
+  </div>
+  </main>
+  </main>
+    </main>
+
+
+    <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Restaurante Sabroso. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- <script>
+    document.getElementById('buscador').addEventListener('keyup', function() {
+      const filtro = this.value.toLowerCase();
+      const productos = document.querySelectorAll('#lista-productos .producto');
+
+      productos.forEach(function(producto) {
+        const texto = producto.textContent.toLowerCase();
+        producto.style.display = texto.includes(filtro) ? 'block' : 'none';
+      });
+    });
+  </script> -->
+  <!--  -----------------------------------carrito Flotante---------------------------->  
+  <div id="mini-carrito" class="mini-carrito oculto">
+    <h3>Carrito</h3>
+    <div id="carrito-items"></div>
+    <div class="carrito-acciones">
+    <button id="comprar-btn" class="boton-comprar">Comprar</button>
+    </div>
+  </div>
+
+
+  <script src="../java_p/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
