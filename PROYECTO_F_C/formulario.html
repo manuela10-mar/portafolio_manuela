@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>0631-R</title>
+        <link rel="stylesheet" href="/CSS/formulario.css">
+    </head>
+    <body >
+       <img src="/imagenes/encabezado_pf.jpg" width="95%" height="350px"> 
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="sinopsis.html">PELICULAS</a><!--que de aqui se despliegue el nombre de las peliculas, y la sinopsis de la misma-->
+                    <ul class="submenu">
+                        <li><a href="/Paginas_peliculas/amoresPerros.html">Amores perros</a></li>
+                        <li><a href="/Paginas_peliculas/carnedtCarne.html">Carne de tu carne</a></li>
+                        <li><a href="/Paginas_peliculas/SecretodOjos.html">El secreto de tus ojos</a></li>
+                        <li><a href="/Paginas_peliculas/SenderoAzul.html">El sendero Azul</a></li>
+                        <li><a href="/Paginas_peliculas/LaCienaga.html">La ciénaga</a></li>
+                        <li><a href="/Paginas_peliculas/EstrategiaCaracol.html">La estrategia del caracol</a></li>
+                        <li><a href="/Paginas_peliculas/MujersCabeza.html">La mujer sin cabeza</a></li>
+                        <li><a href="/Paginas_peliculas/Machuca.html">Machuca</a></li>
+                        <li><a href="/Paginas_peliculas/MariaLLGracia.html">Maria llena eres de gracia</a></li>
+                        <li><a href="/Paginas_peliculas/NueveReinas.html">Nueve reinas</a></li>
+                        <li><a href="/Paginas_peliculas/Siempreviva.html">Siempreviva</a></li>
+                        <li><a href="/Paginas_peliculas/WhiskyRZulu.html">Whisky Romeo Zulú</a></li>
+                        <li><a href="/Paginas_peliculas/TumamaTambien.html">Y tú mamá también</a></li>
+                    </ul>
+                </li>
+                <li><a href="ficha_t.html">FICHA TECNICA</a></li>
+                <li><a href="calificacion.html">CALIFICACION</a> </li>
+                <li><a href="ayuda.html">AYUDA</a></li>
+            </ul>
+        </nav>
+        <form class="formulario_peliculas">
+  <h2>Encuesta sobre la película</h2><br>
+
+  
+  <h3>1. ¿Cuál es el título de la película?</h3>
+  <input type="text" name="titulo" placeholder="Escribe el título">
+
+  <h3>2. ¿Qué tan clara te pareció la trama?</h3><br>
+  <input type="radio" name="trama" value="muy_clara"> Muy clara
+  <input type="radio" name="trama" value="regular"> Regular
+  <input type="radio" name="trama" value="confusa"> Confusa
+
+  
+  <h3>3. Califica la actuación de los personajes (0-10)</h3>
+  <input type="range" name="actuacion" min="0" max="10">
+
+  
+  <h3>4. ¿Qué género identificas en la película?</h3><br>
+  <input type="checkbox" name="genero" value="drama"> Drama
+  <input type="checkbox" name="genero" value="comedia"> Comedia
+  <input type="checkbox" name="genero" value="suspenso"> Suspenso
+  <input type="checkbox" name="genero" value="romance"> Romance
+
+ 
+  <h3>5. ¿Cuál fue tu personaje favorito?</h3>
+  <input type="text" name="personaje" placeholder="Nombre del personaje">
+
+  
+  <h3>6. ¿Qué escena te impactó más?</h3>
+  <textarea name="escena" rows="3" placeholder="Describe la escena"></textarea>
+
+  
+  <h3>7. ¿Recomendarías esta película?</h3><br>
+  <input type="radio" name="recomendar" value="si"> Sí
+  <input type="radio" name="recomendar" value="no"> No
+
+  
+  <h3>8. ¿Cuántas veces has visto esta película?</h3>
+  <input type="number" name="veces" min="0">
+
+  
+  <h3>9. ¿Qué mensaje principal transmite la película?</h3>
+  <input type="text" name="mensaje" placeholder="Escribe tu interpretación">
+
+
+  <h3>10. Calificación general (0-10)</h3>
+  <input type="range" name="calificacion" min="0" max="10">
+
+  <a href="/formulario_listo.html" class="btn_enlace">Enviar Encuesta</a>
+</form>
+
+    
+ </body>
+</html>

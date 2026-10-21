@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background:	white;
+    font-family: 'courier new', monospace;
+}
+
+.navegacion{
+    width: 95%;
+    margin: 5px auto;
+    background-color: #8B0000;
+}
+.navegacion ul{
+    list-style: none;
+}
+.menu>li{
+    display: inline-block;
+}
+.menu>li a{
+    display:  flex;
+    padding: 20px 100px;
+    color: white;
+    font-family: 'courier new', monospace;
+    font-size: 17px;
+    text-decoration: none;
+    justify-content: space-between
+    
+
+
+}
+.menu >li a:hover{
+    background-color: #ffbd59;
+    color: white;
+    transition: all.5s;
+}
+
+/*submenu*/
+.submenu{
+   position: absolute;
+   background: #F5F5DC;
+   visibility: hidden;
+   opacity: 0;
+   transition: opacity 0.5s;
+}
+.submenu li a{
+    display: block;
+    padding: 15px 45px;
+    color: black;
+    font-family: 'courier new', monospace;
+    text-decoration: none;
+}
+.menu>li:hover .submenu{
+    visibility: visible;
+    opacity: 3;
+}
+.item{
+    float: right;
+}
+img {
+    display: block;
+    margin: auto;
+  }
+
+
+/*tabla uno de inicio, donde esta el tituolo y la imagen del televisor viejito ----->*/
+
+.tabla_inicio{
+    width: 95%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+
+.tabla_inicio td{
+    border: none;
+    padding: 20px;
+}
+.titulo_inicio{
+    text-align:left;
+    width: 500px;
+
+}
+.imagen_inicio{
+    text-align:center;
+    width: 550px;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 40px;
+}
+.imagen_inicio:hover{
+    transition: 0.3s;
+}
+
+
+/* tabla dos de la pagina incio, una imagen y donde describo quines somos */
+.tabla_inicio_2 {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #8B0000; 
+    margin: 20px auto;
+}
+
+.tabla_inicio_2 td {
+    padding: 50px;
+    color: black;
+}
+
+
+.imagen_inicio_2 {      
+    margin-top: 10px;
+    width: 400px;
+    height: auto;
+    align-items: left;
+}
+
+.imagen_inicio_2:hover{
+    transition: 0.3s;
+}
+.parrafo_inicio_2 {
+    font-size: 60px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+/*tabla tres de la pagina incio, con las infromacion de nombre, logo y redes sociales */
+.tabla_inicio_3 {
+  width: 90%;
+  margin: 20px auto;
+  border-spacing: 15px;     
+}
+
+.tabla_inicio_3 td {
+    width: 300px;              
+    height: 220px;          
+    border: 2px solid #074D9C;
+    padding: 22px;             
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.tabla_inicio_3 td:hover {
+    transition: 0.3s;
+    color: #8B0000;
+    background-color: #fffacd; /* ejemplo: amarillo claro */
+}
+
+.redes_s{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+.imagen_inicio_3 {
+    width: 70px;
+    height: 70px;
+}
+.imagen_inicio_3:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+
+
+

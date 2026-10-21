@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background:	white;
+    font-family: 'courier new', monospace;
+}
+
+.navegacion{
+    width: 95%;
+    margin: 5px auto;
+    background-color: #8B0000;
+}
+.navegacion ul{
+    list-style: none;
+}
+.menu>li{
+    display: inline-block;
+}
+.menu>li a{
+    display:  flex;
+    padding: 20px 100px;
+    color: white;
+    font-family: 'courier new', monospace;
+    font-size: 17px;
+    text-decoration: none;
+    justify-content: space-between
+    
+
+
+}
+.menu >li a:hover{
+    background-color: #ffbd59;
+    color: white;
+    transition: all.5s;
+}
+
+/*submenu*/
+.submenu{
+   position: absolute;
+   background: #F5F5DC;
+   visibility: hidden;
+   opacity: 0;
+   transition: opacity 0.5s;
+}
+.submenu li a{
+    display: block;
+    padding: 15px 45px;
+    color: black;
+    font-family: 'courier new', monospace;
+    text-decoration: none;
+}
+.menu>li:hover .submenu{
+    visibility: visible;
+    opacity: 3;
+}
+.item{
+    float: right;
+}
+img {
+    display: block;
+    margin: auto;
+  }
+
+/*tabla de la ficha tecnica dodne va estar la informacion especifica de las pelis*/
+
+.contenedor_pelicula_ft{
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+.tabla_info_ft{
+    width: 95%;
+    margin: 0 auto;
+    border: 3px solid #8B0000;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+.titulo_peli_ft{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #300640;
+    color: #ffbd59;
+    padding: 10px;
+}
+
+.texto_s_ft{
+    font-size: 15px;
+    text-align: justify;
+    padding: 10px;
+}
+
+
+.tabla_info_ft td{
+    padding: 15px;
+    text-align: center;
+}
+
+
+.tabla_info_ft td:hover{
+    background-color: #DFBEF9;
+    color: black;
+    transition: 0.3s;
+}
+
+.video_pelicula {
+  width: 450px;   
+  height: 300px;  
+  border: 2px solid #074D9C;
+  border-radius: 8px;
+}
+
+.img_peli_ft{
+    width: 80px;
+    height: 80px;
+}

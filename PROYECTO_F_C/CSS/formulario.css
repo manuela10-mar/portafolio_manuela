@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background:	white;
+    font-family: 'courier new', monospace;
+}
+
+.navegacion{
+    width: 95%;
+    margin: 5px auto;
+    background-color: #8B0000;
+}
+.navegacion ul{
+    list-style: none;
+}
+.menu>li{
+    display: inline-block;
+}
+.menu>li a{
+    display:  flex;
+    padding: 20px 100px;
+    color: white;
+    font-family: 'courier new', monospace;
+    font-size: 17px;
+    text-decoration: none;
+    justify-content: space-between
+    
+
+
+}
+.menu >li a:hover{
+    background-color: #ffbd59;
+    color: white;
+    transition: all.5s;
+}
+
+/*submenu*/
+.submenu{
+   position: absolute;
+   background: #F5F5DC;
+   visibility: hidden;
+   opacity: 0;
+   transition: opacity 0.5s;
+}
+.submenu li a{
+    display: block;
+    padding: 15px 45px;
+    color: black;
+    font-family: 'courier new', monospace;
+    text-decoration: none;
+}
+.menu>li:hover .submenu{
+    visibility: visible;
+    opacity: 3;
+}
+.item{
+    float: right;
+}
+img {
+    display: block;
+    margin: auto;
+  }
+
+/*formularioooooooooooooooooooooooooooooooo*/
+
+
+.formulario_peliculas {
+  width: 80%;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border: 2px solid #8B0000;
+  border-radius: 10px;
+}
+
+.formulario_peliculas h2 {
+  text-align: center;
+  color: #300640;
+}
+
+.formulario_peliculas label {
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #074D9C;
+}
+
+.formulario_peliculas input,
+.formulario_peliculas select,
+.formulario_peliculas textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.formulario_peliculas input[type="radio"],
+.formulario_peliculas input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+.formulario_peliculas button:hover {
+  background-color: #8B0000;
+  color: white;
+}
+
+.img_pelicula{
+    width: 180px;
+    height: 200px;
+    border-radius: 20px;
+   
+}
+.img_pelicula:hover{
+    transform: scale(1.08);
+    transition: 0.3s;
+}

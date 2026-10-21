@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background:	white;
+    font-family: 'courier new', monospace;
+}
+
+.navegacion{
+    width: 95%;
+    margin: 5px auto;
+    background-color: #8B0000;
+}
+.navegacion ul{
+    list-style: none;
+}
+.menu>li{
+    display: inline-block;
+}
+.menu>li a{
+    display:  flex;
+    padding: 20px 100px;
+    color: white;
+    font-family: 'courier new', monospace;
+    font-size: 17px;
+    text-decoration: none;
+    justify-content: space-between
+    
+
+
+}
+.menu >li a:hover{
+    background-color: #ffbd59;
+    color: white;
+    transition: all.5s;
+}
+
+/*submenu*/
+.submenu{
+   position: absolute;
+   background: #F5F5DC;
+   visibility: hidden;
+   opacity: 0;
+   transition: opacity 0.5s;
+}
+.submenu li a{
+    display: block;
+    padding: 15px 45px;
+    color: black;
+    font-family: 'courier new', monospace;
+    text-decoration: none;
+}
+.menu>li:hover .submenu{
+    visibility: visible;
+    opacity: 3;
+}
+.item{
+    float: right;
+}
+img {
+    display: block;
+    margin: auto;
+  }
+
+
+
+
+.contenedor_pelicula{
+    width: 90%;
+    margin: 40px auto;
+}
+
+
+.tabla_principal{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: justify;
+}
+
+.tabla_principal td{
+    padding: 20px;
+}
+
+
+.img_pelicula{
+    width: 220px;
+    height: 330px;
+    border-radius: 10px;
+}
+.img_pelicula:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+
+.tabla_info{
+    width: 100%;
+    border: 3px solid #ffbd59;
+    background-color: #fffacd;
+    border-collapse: collapse;
+}
+
+.titulo_peli{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #8B0000;
+    color: white;
+    padding: 10px;
+}
+
+.texto_s{
+    font-size: 15px;
+    text-align: justify;
+    padding: 10px;
+}
+
+
+.tabla_info td{
+    padding: 15px;
+    text-align: center;
+}
+
+
+.tabla_info td:hover{
+    background-color: #041538;
+    color: white;
+    transition: 0.3s;
+}
+
+
+.tabla_trans{
+    margin-top: 20px;
+    border: 3px solid white;
+    background-color:white;
+    border-collapse: collapse;
+    width: 60%;
+}
+.titulo_trans{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    border: 3px solid white;
+    color: black;
+    
+}
+
+
+.img_trans{
+    width: 80px;
+    height: 80px;
+}
+
+.img_trans:hover{
+    background: #fffacd;
+    border-radius: 50%;
+}
+
+.tabla_peliculas td{  
+    margin: 40px auto; 
+}
+.img_pelicula_2{
+    width: 180px;
+    height: 230px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.img_pelicula_2:hover{
+    transform: scale(1.08);
+    transition: 0.3s;
+}
+
